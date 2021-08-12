@@ -11,18 +11,18 @@ public class GbTask2 {
     }
 
     private static boolean checkSum(int a, int b) {
-        return (10<= (a + b) && (a + b) <= 20);
+        return (10 <= (a + b) && (a + b) <= 20);
     }
 
-    private static void determinatePrintSign (int num) {
-        if (num >= 0){
+    private static void determinatePrintSign(int num) {
+        if (num >= 0) {
             System.out.println(num + " Число положительное");
         } else {
             System.out.println(num + " Число отрицательное");
         }
     }
 
-    private static boolean determinateReturnSign (int num) {
+    private static boolean determinateReturnSign(int num) {
         return (num >= 0);
     }
 
@@ -32,12 +32,7 @@ public class GbTask2 {
         }
     }
 
-    private static boolean determinateLeapYear (int year) {
-        if (year % 4 == 0 & (year % 100 != 0 | year % 400 == 0)){
-            return true;
-        } else {
-            return false;
-        }
+    private static boolean determinateLeapYear(int year) {
+        return (year % 4 == 0 & (year % 100 != 0 | year % 400 == 0));
     }
-
 }
