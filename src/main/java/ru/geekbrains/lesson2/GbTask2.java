@@ -11,13 +11,7 @@ public class GbTask2 {
     }
 
     private static boolean checkSum(int a, int b) {
-        int sum = a + b;
-
-        if (sum >= 10 & sum <= 20) {
-            return true;
-        } else {
-            return false;
-        }
+        return (10<= (a + b) && (a + b) <= 20);
     }
 
     private static void determinatePrintSign (int num) {
@@ -29,11 +23,7 @@ public class GbTask2 {
     }
 
     private static boolean determinateReturnSign (int num) {
-        if (num >= 0){
-            return true;
-        } else {
-            return false;
-        }
+        return (num >= 0);
     }
 
     private static void printString(String string, int num) {
